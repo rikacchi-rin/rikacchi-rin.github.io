@@ -6,77 +6,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-image: url('https://media.discordapp.net/attachments/1124944213239418953/1360758489013813330/images_11.jpg?ex=67fc4899&is=67faf719&hm=15cc23450449500f32b8a7039565c4dbaf2db57ae8ffca948e562f52f67736e7&=&format=webp&width=436&height=648'); /* ここに背景画像のURLを指定 */
+      background-image: url('https://media.discordapp.net/attachments/1124944213239418953/1360758489013813330/images_11.jpg?ex=67fc4899&is=67faf719&hm=15cc23450449500f32b8a7039565c4dbaf2db57ae8ffca948e562f52f67736e7&=&format=webp&width=436&height=648');
       background-size: cover;
       background-position: center;
       height: 100vh;
       overflow: hidden;
+      font-family: sans-serif;
     }
 
-    .welcome-image {
-      width: 120px; /* 好みのサイズに変更OK */
-      height: auto;
-      margin-bottom: 20px;
-      opacity: 0;
-      animation: fadeIn 2s ease-out forwards;
-}
-
-    .welcome-text {
+    .center-content {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-family:'Delicious Handrawn', cursive;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+    }
+
+    .welcome-image {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      animation: fadeIn 2s ease-out forwards;
+      opacity: 0;
+    }
+
+    .welcome-text {
+      font-family: 'Delicious Handrawn', cursive;
       font-size: 60px;
       color: #4169e1;
       opacity: 0;
-      animation: fadeIn 10s ease-out forwards;
+      animation: fadeIn 3s ease-out forwards;
+      animation-delay: 0.5s;
+      margin: 0;
     }
+
+    .name-message {
+      font-family: 'Hachi Maru Pop', cursive;
+      font-size: 36px;
+      color: #4d4d4d;
+      opacity: 0;
+      animation: fadeIn 4s ease-out forwards;
+      animation-delay: 1s;
+      margin: 0;
+    }
+
     .sub-message {
-      font-family:'Hachi Maru Pop', cursive;
-      font-size: 30px;
+      font-family: 'Hachi Maru Pop', cursive;
+      font-size: 28px;
       color: #ff99cc;
       opacity: 0;
       animation: fadeIn 5s ease-out forwards;
-      animation-delay: 1s;
-      margin-top: 10px;
+      animation-delay: 1.5s;
+      margin: 0;
     }
-    .name-message {
-      font-family:'Hachi Maru Pop', cursive;
-      font-size: 40px;
-      color: #4d4d4d;
-      opacity: 0;
-      animation: fadeIn 5s ease-out forwards;
-      animation-delay: 1s;
-      margin-top: 10px;
-    }
+
     @keyframes fadeIn {
       from {
         opacity: 0;
-        transform: translate(-50%, -60%);
+        transform: translateY(-10%);
       }
       to {
         opacity: 1;
-        transform: translate(-50%, -50%);
+        transform: translateY(0%);
       }
     }
   </style>
 </head>
 <body>
-  <img src="https://media.discordapp.net/attachments/1124944213239418953/1360777943525097673/PXL_20250222_084044411.jpg?ex=67fc5ab7&is=67fb0937&hm=28c25278ad412afb3a786ce5b38790767e424dda64cf005d4a19c87738a2b8d6&=&format=webp&width=488&height=648" alt="写真" class="welcome-image">
-  <h1 class="welcome-text">welcome!</div>
-  <p class="name-message">
-  村上喬之　様
-</p>
-  <p class="sub-message">
-  来てくれてありがとう！<br>
-  今日は楽しんでってね♪
-</p>
+  <div class="center-content">
+    <img src="https://media.discordapp.net/attachments/1124944213239418953/1360777943525097673/PXL_20250222_084044411.jpg?ex=67fc5ab7&is=67fb0937&hm=28c25278ad412afb3a786ce5b38790767e424dda64cf005d4a19c87738a2b8d6&=&format=webp&width=488&height=648" alt="写真" class="welcome-image">
+    <h1 class="welcome-text">welcome!</h1>
+    <p class="name-message">村上喬之 様</p>
+    <div class="sub-message">
+      来てくれてありがとう！<br>
+      今日は楽しんでってね♪
+    </div>
+  </div>
 </body>
 </html>
-
