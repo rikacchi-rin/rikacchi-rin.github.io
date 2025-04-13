@@ -18,6 +18,14 @@
       overflow: hidden;
     }
 
+    .welcome-image {
+      width: 120px; /* 好みのサイズに変更OK */
+      height: auto;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeIn 2s ease-out forwards;
+}
+
     .welcome-text {
       position: absolute;
       top: 50%;
@@ -31,8 +39,17 @@
     }
     .sub-message {
       font-family:'Hachi Maru Pop', cursive;
-      font-size: 24px;
-      color: #ffd700;
+      font-size: 30px;
+      color: #ff99cc;
+      opacity: 0;
+      animation: fadeIn 5s ease-out forwards;
+      animation-delay: 1s;
+      margin-top: 10px;
+    }
+    .name-message {
+      font-family:'Hachi Maru Pop', cursive;
+      font-size: 40px;
+      color: #4d4d4d;
       opacity: 0;
       animation: fadeIn 5s ease-out forwards;
       animation-delay: 1s;
@@ -51,7 +68,11 @@
   </style>
 </head>
 <body>
-  <div class="welcome-text">welcome!</div>
+  <img src="https://media.discordapp.net/attachments/1124944213239418953/1360777943525097673/PXL_20250222_084044411.jpg?ex=67fc5ab7&is=67fb0937&hm=28c25278ad412afb3a786ce5b38790767e424dda64cf005d4a19c87738a2b8d6&=&format=webp&width=488&height=648" alt="写真" class="welcome-image">
+  <h1 class="welcome-text">welcome!</div>
+  <p class="name-message">
+  村上喬之　様
+</p>
   <p class="sub-message">
   来てくれてありがとう！<br>
   今日は楽しんでってね♪
