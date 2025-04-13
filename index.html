@@ -23,13 +23,21 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-family:'Delicious Handrawn', sans-serif;
-      font-size: 48px;
+      font-family:'Delicious Handrawn', cursive;
+      font-size: 60px;
       color: #4169e1;
       opacity: 0;
       animation: fadeIn 10s ease-out forwards;
     }
-
+    .sub-message {
+      font-family:'Hachi Maru Pop', cursive;
+      font-size: 24px;
+      color: #ffd700;
+      opacity: 0;
+      animation: fadeIn 5s ease-out forwards;
+      animation-delay: 1s;
+      margin-top: 10px;
+    }
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -44,6 +52,10 @@
 </head>
 <body>
   <div class="welcome-text">welcome!</div>
+  <p class="sub-message">
+  来てくれてありがとう！<br>
+  今日は楽しんでってね♪
+</p>
 </body>
 </html>
 
