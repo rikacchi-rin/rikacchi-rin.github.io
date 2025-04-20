@@ -1,0 +1,53 @@
+<!-- quiz.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クイズに挑戦！</title>
+  <style>
+    body {
+      font-family: 'Hachi Maru Pop', cursive;
+      text-align: center;
+      padding: 40px;
+      background-color: #fff0f5;
+    }
+    .question {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    .input-box {
+      font-size: 24px;
+      padding: 10px;
+      width: 150px;
+    }
+    .submit-button {
+      margin-top: 20px;
+      font-size: 20px;
+      padding: 10px 20px;
+      background-color: #4169e1;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="question">
+    当てたら豪華景品！？<br>
+    新郎はこの日のためにダイエットに挑戦！<br>
+    さて今日までに何キロ痩せたでしょう？<br><br>
+    ５キロ痩せたと思ったら -5.0 と、<br>
+    むしろ太った！？と思ったら + で記入してね！<br>
+    正誤判定は小数点１桁だから慎重に予想してね！
+  </div>
+  <form action="result.html" method="get" class="form-group">
+    <div class="input-wrapper">
+      <input type="text" name="guess" class="input-box" required>
+      <span class="unit">kg</span>
+    </div>
+    <button type="submit" class="submit-button">回答する</button>
+  </form>
+</body>
+</html>
