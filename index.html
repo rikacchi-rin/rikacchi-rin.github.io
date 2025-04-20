@@ -69,6 +69,21 @@
       animation-delay: 1.5s;
       margin: 0;
     }
+    .quiz-button {
+  margin-top: 50px;
+  padding: 15px 30px;
+  font-size: 24px;
+  background-color: #ff69b4; /* ピンク */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Hachi Maru Pop', cursive;
+  transition: background-color 0.3s;
+}
+.quiz-button:hover {
+  background-color: #ff85c1;
+}
 
     @keyframes fadeIn {
       from {
@@ -84,13 +99,16 @@
 </head>
 <body>
   <div class="center-content">
-    <img src="IMG_5552.JPG" alt="写真" class="welcome-image">
+    <img src="IMG_5552.jpg" alt="写真" class="welcome-image">
     <h1 class="welcome-text">welcome!</h1>
     <p class="name-message">村上喬之 様</p>
     <div class="sub-message">
       来てくれてありがとう！<br>
       今日は楽しんでってね♪
     </div>
+    <a href="quiz.html">
+      <button class="quiz-button">新郎ダイエットクイズに挑戦する</button>
+    </a>
   </div>
 </body>
 </html>
