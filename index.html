@@ -14,22 +14,18 @@
       background-image: url('images_11.jpg');
       background-size: cover;
       background-position: center;
-      height: 100vh;
-      overflow: hidden;
       font-family: 'Hachi Maru Pop', cursive;
+      min-height: 100vh;
     }
 
     .center-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       gap: 15px;
-      max-width: 500px; 
+      max-width: 500px;
+      margin: 100px auto;
     }
 
     .welcome-image {
@@ -69,21 +65,23 @@
       animation-delay: 1.5s;
       margin: 0;
     }
+
     .quiz-button {
-  margin-top: 50px;
-  padding: 15px 30px;
-  font-size: 24px;
-  background-color: #ff69b4; /* ピンク */
-  color: white;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  font-family: 'Hachi Maru Pop', cursive;
-  transition: background-color 0.3s;
-}
-.quiz-button:hover {
-  background-color: #ff85c1;
-}
+      margin-top: 50px;
+      padding: 15px 30px;
+      font-size: 24px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: 'Hachi Maru Pop', cursive;
+      transition: background-color 0.3s;
+    }
+
+    .quiz-button:hover {
+      background-color: #ff85c1;
+    }
 
     @keyframes fadeIn {
       from {
@@ -95,20 +93,63 @@
         transform: translateY(0%);
       }
     }
+
+    .bottom-message {
+      font-size: 22px;
+      color: #333;
+      text-align: center;
+      padding: 80px 20px;
+      line-height: 1.8;
+      background: rgba(255, 255, 255, 0.8);
+      font-family: 'Hachi Maru Pop', cursive;
+    }
+
+    .extra-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      gap: 40px;
+    }
+
+    .extra-image {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .extra-text {
+      font-size: 24px;
+      color: #444;
+      text-align: center;
+      font-family: 'Hachi Maru Pop', cursive;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
   <div class="center-content">
-    <img src="IMG_5552.JPG" alt="写真" class="welcome-image">
+    <img src="PXL_20250227_082235563" alt="写真" class="welcome-image">
     <h1 class="welcome-text">welcome!</h1>
     <p class="name-message">村上喬之 様</p>
     <div class="sub-message">
-      来てくれてありがとう！<br>
+      来てくれてありがとう<br>
       今日は楽しんでってね♪
     </div>
-    <a href="quiz.html">
-      <button class="quiz-button">新郎ダイエットクイズに挑戦する</button>
-    </a>
+  </div>
+
+
+  <div class="extra-section">
+    <img src="images_11.jpg" alt="ドレスクイズ画像" class="extra-image">
+    <p class="extra-text">披露宴での新婦のドレス色当てクイズ！<br>
+      名前を書いて投票箱に入れてください♪</p>
+
+    <img src="images_11.jpg" alt="メッセージお願い画像" class="extra-image">
+    <p class="extra-text">
+      結婚式に参加してくださった思い出に<br>
+      良ければメッセージも書いてくださるとうれしいです！
+    </p>
   </div>
 </body>
 </html>
